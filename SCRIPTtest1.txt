@@ -517,7 +517,7 @@ end)
     Size = UDim2.fromOffset(475, 340),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Darker",
-    MinimizeKey = Enum.KeyCode.F2 -- Used when theres no MinimizeKeybind
+    MinimizeKey = Enum.KeyCode.l -- Used when theres no MinimizeKeybind
 })
  Tabs = {
     Info = Window:AddTab({ Title = "About", Icon = "rbxassetid://4871684504" }),
@@ -8602,7 +8602,7 @@ Window:SelectTab(1)
 game:GetService("Players").LocalPlayer.PlayerGui.Announcement.Frame.Visible = false
 Fluent:Notify({
     Title = "Saluna With Love ♥",
-    Content = "Have a nice day! \nUI Toggle for PC (F2)",
+    Content = "Have a nice day! \nUI Toggle for PC (l)",
     Duration = 120
 })
 
@@ -8628,9 +8628,9 @@ task.wait(0.05)
 game.TweenService:Create(hideUI, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
  Size = UDim2.new(0, 60, 0, 60)
 	}):Play()
-game:GetService("VirtualInputManager"):SendKeyEvent(true,"F2",false,game)
+game:GetService("VirtualInputManager"):SendKeyEvent(true,"l",false,game)
 task.wait()
-game:GetService("VirtualInputManager"):SendKeyEvent(false,"F2",false,game)
+game:GetService("VirtualInputManager"):SendKeyEvent(false,"l",false,game)
 end)
 
 hideUICorner = Instance.new("UICorner")
